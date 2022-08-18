@@ -14,7 +14,6 @@ public class ReverseArrayDemo {
     }
     //Write the logic to reverse the given array inside the below
     // method and return the reverse array.
-
     /**
      * It reverses the array.
      *
