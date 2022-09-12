@@ -9,11 +9,12 @@ public class ReverseArrayDemo {
         //Call the method getReverseArray and pass the array as parameter
         int[] reverse = reverseArrayDemo.getReverseArray(array);
         for (int i = 0; i < reverse.length; i++) {
-            System.out.println(reverse[i]);
+            System.out.print(reverse[i] + " ");
         }
     }
     //Write the logic to reverse the given array inside the below
     // method and return the reverse array.
+
     /**
      * It reverses the array.
      *
@@ -22,10 +23,9 @@ public class ReverseArrayDemo {
      */
     public int[] getReverseArray(int[] array) {
         int[] reverseArray = new int[array.length];
-        int n = array.length;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n - i; j++) {
-                reverseArray[j] = array[i];
+        for (int index = 0; index < array.length; index++) {
+            for (int j = 0; j < array.length - index; j++) {
+                reverseArray[j] = array[index];
             }
         }
         return reverseArray;
